@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="portfolio.css">
+    <script src="app.js"></script>
+    <script>
+        function fun(str1){
+            var s1=document.getElementsByClassName('items')
+            if (str1=='about'){
+                window.location='about.html'
+            }else 
+            if (str1=='index'){
+                window.location='index.html'
+            }else
+            if (str1=='Skills'){
+                window.location='skills.html'
+            }else
+            if (str1=='contact'){
+                window.location='contact.html'
+            }else
+            if (str1=='portfolio'){
+                window.location='portfolio.html'
+            }
+     
+        }
+    </script>
+</head>
+
+    
+
+<body>
+    <div id="head">
+        <button class="items" onclick="fun('index')">Home</button>
+        <button class="items" onclick="fun('about')">About</button>
+        <button class="items" onclick="fun('Skills')">Skills</button>
+        <button class="items" onclick="fun('portfolio')">Projects</button>
+        <button class="items" onclick="fun('contact')">Certifications</button>
+    </div>
+
+
+
+<!--B TECH PROJECT-->
+
+
+    <fieldset class="head2">
+        <legend class="tile2">Deep Learning-based Face Mask Detection using yolo v5.</legend>
+
+           <p> This study explores yolov5-based Face Mask Detection during the covid-19 pandemic, 
+            finding the 300-epoch model to perform best with 96.5% accuracy. 
+            cnns excel in image analysis with minimal pre-processing, thanks to their filter-based feature extraction.</p>
+ 
+    </fieldset>
+
+<!--DATA ANALYSIS PROJECT-->
+    
+    <fieldset class="head2" class="hidden">
+        <legend class="tile2">Pizza Sales Analytics</legend>
+            <P>
+                This project aims to analyze pizza sales data to gain valuable insights into various aspects of the business, 
+                including total revenue, top-selling pizzas, sales distribution by pizza size, sales by month, day, and hour, 
+                and identifying peak sales times.
+            </P>
+            <img src="PIZZA_1.png">
+            <img src="PIZZA_2.png">
+
+            <a href="https://github.com/suman98765/pizza_sales.git">Project link</a>
+    </fieldset>
+
+
+    <fieldset class="head2">
+        <legend class="tile2">Employee Attendance Analysis.</legend>
+
+           <p>
+                Employee Attendance Analysis
+                Objective: The Employee Attendance Analysis project aims to provide valuable insights and data-driven
+                decision-making capabilities to a company by using Power BI. The primary focus is on analyzing 
+                various aspects of employee attendance, key ratios, and trends. The project covers essential metrics 
+                such as total working days, present days, work-from-home days, weekly and monthly attendance 
+                percentages, sick leaves, and day-wise analysis.
+                
+            </p>
+            <img src="EMP.png">
+
+            <a href="https://github.com/suman98765/Employee-attendance-analysis.git">Project link</a>
+ 
+    </fieldset>
+
+    <div class="footer" class="hidden" >
+          &copy; 2023 SUMANTH ALL RIGHTS RESERVED.
+    </div>
+</body>
+</html>

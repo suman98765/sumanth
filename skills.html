@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Skills</title>
+    <link rel="stylesheet" href="skills.css">
+    <script src="home.js"></script>
+    <script>
+        function fun(str1){
+            var s1=document.getElementsByClassName('items')
+            if (str1=='about'){
+                window.location='about.html'
+            }else 
+            if (str1=='index'){
+                window.location='index.html'
+            }else
+            if (str1=='Skills'){
+                window.location='skills.html'
+            }else
+            if (str1=='contact'){
+                window.location='contact.html'
+            }else
+            if (str1=='portfolio'){
+                window.location='portfolio.html'
+            }
+        }
+    </script>
+</head>
+<body>
+    <div id="head">
+        <button class="items" onclick="fun('index')">Home</button>
+        <button class="items" onclick="fun('about')">About</button>
+        <button class="items"onclick="fun('Skills')">Skills</button>
+        <button class="items"onclick="fun('portfolio')">Projects</button>
+        <button class="items" onclick="fun('contact')">Certifications</button>
+    </div>
+    <fieldset><legend>TECHNICAL SKILLS</legend>
+        <div id="technical">
+            <div class="tech">Data Analysis: Proficient in data cleaning, exploration, and statistical analysis using Python, Pandas, NumPy.</div>
+            <div class="tech">Machine Learning: Experienced in building predictive models and deep learning algorithms with Scikit-Learn, TensorFlow, PyTorch</div>
+            <div class="tech">Data Visualization: Skilled in creating insightful visualizations using Matplotlib, Seaborn , Tableau and Power BI.</div>
+            <div class="tech">Data Visualization: Skilled in creating insightful visualizations using Matplotlib, Seaborn , Tableau and Power BI.
+            </div>
+            <div class="tech">Big Data: Familiar with working with large datasets and distributed computing frameworks like Apache Spark, Hadoop.
+            </div>
+            <div class="tech">Natural Language Processing: Competent in text analysis, sentiment analysis, and chatbot development.
+            </div>
+            <div class="tech">Data Engineering: Knowledgeable about data pipelines, ETL processes, and SQL databases.
+            </div>
+            <div class="tech">Version Control: Proficient with Git and GitHub for collaborative coding and project management.
+            </div>
+            <div class="tech">Cloud Computing: Familiar with AWS for deploying data science projects.
+            </div>
+            <div class="tech">Database Management: SQL, MongoDB</div>
+        </div>
+    </fieldset>
+
+    <fieldset><legend>NON-TECHNICAL SKILLS</legend>
+        <div id="nontech">
+            <div class="non">Leadership Skills: The ability to inspire and guide a team  toward achieving its goals.
+            </div>
+            <div class="non">Communication Skills: Effectively conveying information, ideas, and messages to others.
+            </div>
+            <div class="non">Critical Thinking Skills: Analyzing complex problems and making well-informed decisions.
+            </div>
+            <div class="non">Problem-Solving Skills: Identifying and resolving challenges with creative and effective solutions.
+            </div>
+            <div class="non">Organization Skills: Efficiently managing time, tasks, and resources to achieve objectives.
+            </div>
+            <div class="non">Teamwork Skills: Collaborating with diverse individuals to achieve common goals.</div>
+        </div>
+    </fieldset>
+
+    <div class="footer">
+        &copy; 2023 SUMANTH ALL RIGHTS RESERVED.
+    </div>
+</body>
+</html>
+
+
+

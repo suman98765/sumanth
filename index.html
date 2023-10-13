@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile</title>
+    <link rel="stylesheet" href="home.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+ 
+<script>
+    function fun(str1){
+        var s1=document.getElementsByClassName('items')
+        if (str1=='about'){
+            window.location='about.html'
+        }else 
+        if (str1=='index'){
+            window.location='index.html'
+        }else
+        if (str1=='Skills'){
+            window.location='skills.html'
+        }else
+        if (str1=='contact'){
+            window.location='contact.html'
+        }else
+        if (str1=='portfolio'){
+            window.location='portfolio.html'
+        }
+    }
+</script>
+
+
+</head>
+<body>
+    <div id="head">
+        <button class="items" onclick="fun('index')">Home</button>
+        <button class="items" onclick="fun('about')">About</button>
+        <button class="items"onclick="fun('Skills')">Skills</button>
+        <button class="items"onclick="fun('portfolio')">Projects</button>
+        <button class="items" onclick="fun('contact')">Certifications</button>
+    </div>
+    <div id="pic">
+        <img src="pic.png">
+        <div id="about">
+            <h4><b>Hi, It's Me</b></h4> <br>
+            <h1>P SUMANTH REDDY</h1>
+            I'm an aspiring data scientist with a strong foundation in data analysis and a B.Tech degree. 
+            I'm eager to apply my skills to extract actionable insights from data and drive data-driven decisions in a dynamic role.
+          
+            <div class="icons">
+                <a href="#" id="linked" class="fa fa-linkedin"></a>
+                <a href="#" id="insta" class="fa fa-instagram"></a>
+                <a href="#" id="git" class="fa fa-github"></a>
+                <a href="#" id="face" class="fa fa-facebook"></a>
+            </div>
+        </div>
+    </div>
+ 
+    <div class="footer">
+        &copy; 2023 SUMANTH ALL RIGHTS RESERVED.
+    </div>
+</body>
+</html>

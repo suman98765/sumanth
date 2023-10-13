@@ -1,0 +1,192 @@
+
+*{
+    background-color: black;
+    color: white;
+    font-size: 20px;
+    font-family: 'Times New Roman', Times, serif;
+    margin: 1%;
+}
+
+#head{
+    margin-left: 10%;
+    display: flex;
+    justify-content: flex-end;
+}
+
+
+
+.items:hover{
+    background-color: white;
+    color: black;
+    box-shadow: -0.3ch 0.3ch  -0.3ch 0.3ch  0.5ch whitesmoke;
+
+}
+
+.items{
+    flex:1;
+    align-items: center;
+    border-radius: 10px;
+    box-shadow: 10px auto;
+    text-align: center;
+    padding: 2px;
+    cursor: pointer;
+
+}
+
+
+#pic img{
+    margin-top: 7%;
+    border:1px solid;
+    border-radius: 20px;
+    position: relative;
+    box-shadow: -0.3ch -0.3ch 2ch 2ch rgb(69, 50, 50);
+    box-shadow: 0.3ch, 0.3ch 2ch 2ch rgb(69, 50, 50);
+    height: 50%;
+    width: 25%;
+    border: none;
+    transform: scale(0.8);
+    transition: .2s ;
+
+
+}
+
+
+
+
+#pic img:hover{
+    transform: scale(1);
+}
+
+
+
+#pic{
+    display: flex;
+    flex:1;
+    justify-content: flex-end;
+    align-items: center;
+
+    animation: sidein-pic linear 0.9s 1 ;
+
+}
+
+#about{
+    top:40%;
+    height: 50%;
+    width: 40%;
+    flex:1;
+    text-align: center;
+    animation: sidein linear 0.9s 1 ;
+}
+
+@keyframes sidein-pic {
+  from {
+
+    transform: translateX(-20%);
+  }
+  to {
+    /* returns the sun to its default position */
+    transform: translateX(4%);
+  }
+}
+
+
+@keyframes sidein {
+    from {
+  
+      transform: translateX(100%);
+    }
+    to {
+      /* returns the sun to its default position */
+      transform: translateX(2%);
+    }
+  }
+  
+
+
+.icons a{
+    height: 10%;
+    width: 4%;
+    border: 1px solid;
+    border-radius:20px;
+    padding: 5px;
+    border: none;
+    padding: 15px;  
+    animation: down linear 3s 1 ;  
+
+}
+
+
+
+@keyframes down {
+    from {
+  
+      transform: translateY(110%);
+    }
+    to {
+      /* returns the sun to its default position */
+      transform: translateY(0%);
+    }
+  }
+  
+
+.icons #linked:hover, #face:hover{
+    background-color: blue;
+    border: transparent;   
+
+
+}
+
+.icons #insta:hover{
+    background-color: rgb(240, 9, 47);
+    border: transparent;
+
+}
+
+
+.icons #git:hover{
+    background-color: rgb(243, 10, 243);
+    border: transparent;
+ 
+}
+
+
+.footer{
+    text-align: center;
+    padding: 30PX;
+
+}
+
+
+
+
+@media screen and (max-device-width:428px),screen and (max-width:428px) 
+{
+  *{
+    font-size: 10px;
+    font-family: 'Times New Roman', Times, serif;
+  }
+
+}
+
+
+
+@media screen and (max-device-width:237px),screen and (max-width:237px) 
+{
+  *{
+    font-size: 8px;
+    font-family: 'Times New Roman', Times, serif;
+  }
+
+}
+
+
+
+
+@media screen and (max-device-width:190px),screen and (max-width:190px) 
+{
+  *{
+    font-size: 6px;
+    font-family: 'Times New Roman', Times, serif;
+  }
+
+}
