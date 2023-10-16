@@ -190,3 +190,24 @@
   }
 
 }
+
+
+
+#name{
+  margin-left: 7%;
+}
+
+
+#download{
+  margin-left: 8%;
+  border: none ;
+}
+
+#download_style{
+  background-color: blue;
+  border: none;
+  border-radius: 5px;
+  padding: 10px;
+  box-shadow: 2px 2px 15px 0.2px rgb(85, 196, 237);
+
+}
