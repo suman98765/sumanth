@@ -207,7 +207,58 @@
   background-color: blue;
   border: none;
   border-radius: 5px;
-  padding: 10px;
+  padding: 7px;
   box-shadow: 2px 2px 15px 0.2px rgb(85, 196, 237);
+  transition: .2s;
+  transform: scale(1);
 
 }
+
+#download_style:hover{
+  transform: scale(1.2);
+}
+
+body{
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 15px;
+  font-weight: 100;
+  
+}
+
+h1{
+  display: flex;
+  place-content: center;
+  font-size: 200%;
+  color: aqua;
+}
+
+
+input, textarea{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 40%;
+  margin: auto;
+  border: none;
+  padding: 15px;
+  line-height: 10px;
+  margin-bottom: 10px;
+  border-radius: 10px;
+  box-shadow: 1px 1px 1px 1px rgba(236, 127, 169, 0.227);
+  background-color: rgba(149, 159, 169, 0.422);
+}
+
+#submit{
+  width: 20%;
+  margin: auto;
+  align-items: center;
+  background-color: green;
+  font-size: 20px;
+  transition: 0.2s;
+  transform: scale(0.9);
+}
+
+#submit:hover{
+  transform: scale(1);
+}
+
